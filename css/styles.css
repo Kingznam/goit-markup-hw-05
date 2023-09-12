@@ -146,6 +146,17 @@ address {
   width: 100%; 
 }
 
+.current-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ocean);
+  position: absolute;
+  bottom: -25px;
+}
+
 .logo {
   text-decoration: none;
   font-family: 'Raleway';
@@ -633,17 +644,21 @@ fill: var(--cloud);
   left: 0px;
   pointer-events: auto;
   opacity: 1;
-  transition-property: visibility, opacity;
+  transition-property: visibility, opacity, transform;
   transition-duration: 250ms;
   transform: none;
-  top: 80px;
 
 }
 
 .modal.is-hidden {
   visibility: hidden;
   opacity: 0;
-  transform: translateY();
+  transform: translateY(-20px);
+
+  .modal.is-hidden .modal-content {
+    transform: scale(0.5);
+
+  }
 
 
 }
@@ -659,7 +674,8 @@ fill: var(--cloud);
   display: flex;
   align-items: center;
   margin: auto;
-  
+  top: 80px;
+  transform: translateY(-20px);
 }
 
 .modal-content {
@@ -678,6 +694,7 @@ fill: var(--cloud);
   position: absolute;
   top: 24px;
   right: 24px;
+  cursor: pointer;
 }
 
 .modal-close svg {
