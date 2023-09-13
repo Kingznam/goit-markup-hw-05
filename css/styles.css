@@ -158,14 +158,15 @@ address {
   border-radius: 2px;
   background: var(--ocean);
   position: absolute;
-  bottom: -25px;
+  top: 50px;
+  bottom: 0;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
 .current {
-  color: var()
+  color: var(--ocean)
 }
 
 .logo {
