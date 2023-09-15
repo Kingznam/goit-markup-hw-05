@@ -107,6 +107,7 @@ address {
 
 .nav-menu-item {
   display: inline-flex;
+  position: relative;
 }
 
 .contacts {
@@ -126,9 +127,6 @@ address {
   position: relative;
 }
 
-.nav-menu-item {
-  position: relative;
-}
 
 .nav-menu-item::after {
   content: '';
