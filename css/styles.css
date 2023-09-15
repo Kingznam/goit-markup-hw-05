@@ -199,7 +199,6 @@ address {
 
 .contacts-address-link:hover {
   color: var(--ocean);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -210,6 +209,8 @@ address {
   letter-spacing: 0.32px;
   color: var(--slate);
   margin-left: auto;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .hero-section-container {
@@ -258,6 +259,7 @@ address {
   letter-spacing: 0.64px;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features-items {
@@ -317,6 +319,9 @@ address {
   font-family: inherit;
   display: inline-flex;
   border-radius: 4px;
+  transition-property: background-color, color, box-shadow, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover{
