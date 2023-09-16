@@ -167,6 +167,12 @@ address {
   color: var(--ocean);
 }
 
+.nav-menu-item.current .nav-menu-link {
+  color: var(--ocean);
+}
+
+
+
 .logo {
   text-decoration: none;
   font-family: 'Raleway';
@@ -541,7 +547,11 @@ address {
   object-fit: cover;
   fill: currentColor;
   background-size: cover;
-  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer-lists-item:hover .company-logo {
+  fill: var(--ocean);
 }
 
 .customer-logo {
